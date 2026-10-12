@@ -1,0 +1,28 @@
+uuid: be7c2247-8d20-4a14-a16a-110d1815d36a
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - commerce_checkout
+    - commerce_order
+    - commerce_payment
+    - commerce_product
+    - file
+    - filter
+    - system
+_core:
+  default_config_hash: wkW7P5A53YhGmsgamrmTbfwpZrqdnPYiJdoAZQtdmJg
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access checkout'
+  - 'access content'
+  - 'delete own files'
+  - 'manage own commerce_payment_method'
+  - 'use text format basic_html'
+  - 'view commerce_product'
+  - 'view own commerce_order'

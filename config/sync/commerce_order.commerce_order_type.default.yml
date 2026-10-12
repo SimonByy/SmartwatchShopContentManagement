@@ -1,0 +1,18 @@
+uuid: b072039b-52eb-4d96-9e23-6a7c960cde43
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: jn2Hj-04qG6O3dTtK8EaBB13jVPplONDb9L0Fat-0pI
+id: default
+label: Default
+traits: {  }
+locked: false
+workflow: order_default
+showOrderEditLinks: false
+numberPattern: order_default
+refresh_mode: customer
+refresh_frequency: 300
+sendReceipt: true
+receiptBcc: ''
+receiptSubject: ''
