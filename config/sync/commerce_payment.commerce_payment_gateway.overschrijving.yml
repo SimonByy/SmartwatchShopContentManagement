@@ -1,0 +1,19 @@
+uuid: 2c2a914d-c1bf-456c-975b-96f5a8a11763
+langcode: en
+status: true
+dependencies: {  }
+id: overschrijving
+label: Overschrijving
+weight: null
+plugin: manual
+configuration:
+  display_label: Overschrijving
+  mode: n/a
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+  instructions:
+    value: 'Schrijf het bedrag over naar BE00 0000 0000 0000 met je ordernummer.'
+    format: plain_text
+conditions: {  }
+conditionOperator: AND
