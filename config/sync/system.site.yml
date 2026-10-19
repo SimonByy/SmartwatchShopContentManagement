@@ -2,13 +2,13 @@ _core:
   default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
 langcode: en
 uuid: 1121ba14-9fe4-47be-9913-ab1804df3485
-name: 'Drush Site-Install'
-mail: admin@example.com
-slogan: ''
+name: SmartwatchShop
+mail: simon.boey@student.hogent.be
+slogan: 'Find your ideal watch with SmartwatchShop'
 page:
   403: ''
   404: ''
-  front: /node
+  front: /Node
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
