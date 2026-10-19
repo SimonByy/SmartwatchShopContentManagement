@@ -1,0 +1,30 @@
+uuid: 07c4aeeb-35ae-465e-a993-db0c1531fcde
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - options
+id: commerce_product.field_display_type
+field_name: field_display_type
+entity_type: commerce_product
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: amoled
+      label: AMOLED
+    -
+      value: mip
+      label: MIP
+    -
+      value: lcd
+      label: LCD
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

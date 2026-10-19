@@ -1,0 +1,24 @@
+uuid: 1fd204d9-03d1-46be-b770-4e9a54e02610
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_attribute.case_size
+    - commerce_product.commerce_product_variation_type.smartwatch_variation
+    - field.storage.commerce_product_variation.attribute_case_size
+id: commerce_product_variation.smartwatch_variation.attribute_case_size
+field_name: attribute_case_size
+entity_type: commerce_product_variation
+bundle: smartwatch_variation
+label: 'Case size'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_product_attribute_value'
+  handler_settings:
+    target_bundles:
+      case_size: case_size
+field_type: entity_reference

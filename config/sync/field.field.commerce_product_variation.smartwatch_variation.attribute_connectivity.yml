@@ -1,0 +1,24 @@
+uuid: 16aca4b5-b0fa-4346-9dc2-39116bf7bd75
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_attribute.connectivity
+    - commerce_product.commerce_product_variation_type.smartwatch_variation
+    - field.storage.commerce_product_variation.attribute_connectivity
+id: commerce_product_variation.smartwatch_variation.attribute_connectivity
+field_name: attribute_connectivity
+entity_type: commerce_product_variation
+bundle: smartwatch_variation
+label: Connectivity
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_product_attribute_value'
+  handler_settings:
+    target_bundles:
+      connectivity: connectivity
+field_type: entity_reference

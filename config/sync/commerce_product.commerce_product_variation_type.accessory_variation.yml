@@ -1,0 +1,10 @@
+uuid: ef6a53bb-8ce2-4ca6-baab-591329f7a765
+langcode: en
+status: true
+dependencies: {  }
+id: accessory_variation
+label: 'Accessory variation'
+traits: {  }
+locked: false
+orderItemType: default
+generateTitle: true

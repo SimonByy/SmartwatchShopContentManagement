@@ -1,0 +1,13 @@
+uuid: 306b44e4-80b4-4b56-be2a-8d78f2fb457b
+langcode: en
+status: true
+dependencies: {  }
+id: accessory
+label: Accessory
+traits: {  }
+locked: false
+description: ''
+variationTypes:
+  - accessory_variation
+multipleVariations: true
+injectVariationFields: false

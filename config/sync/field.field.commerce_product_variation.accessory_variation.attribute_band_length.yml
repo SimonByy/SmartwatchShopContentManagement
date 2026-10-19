@@ -1,0 +1,24 @@
+uuid: af74e02e-2728-4681-a676-3a8dda3676d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_attribute.band_length
+    - commerce_product.commerce_product_variation_type.accessory_variation
+    - field.storage.commerce_product_variation.attribute_band_length
+id: commerce_product_variation.accessory_variation.attribute_band_length
+field_name: attribute_band_length
+entity_type: commerce_product_variation
+bundle: accessory_variation
+label: 'Band length'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_product_attribute_value'
+  handler_settings:
+    target_bundles:
+      band_length: band_length
+field_type: entity_reference

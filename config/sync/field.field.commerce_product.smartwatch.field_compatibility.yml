@@ -1,0 +1,29 @@
+uuid: 365cf224-7a52-48e7-bf6c-f666eba2b1bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.smartwatch
+    - field.storage.commerce_product.field_compatibility
+    - taxonomy.vocabulary.compatibiliteit
+id: commerce_product.smartwatch.field_compatibility
+field_name: field_compatibility
+entity_type: commerce_product
+bundle: smartwatch
+label: Compatibility
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      compatibiliteit: compatibiliteit
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

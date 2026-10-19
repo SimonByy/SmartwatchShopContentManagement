@@ -1,0 +1,20 @@
+uuid: b3dbcd31-438c-4137-a745-204488b09527
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product.field_battery_life_gps
+field_name: field_battery_life_gps
+entity_type: commerce_product
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

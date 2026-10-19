@@ -1,0 +1,29 @@
+uuid: 48da54c4-6992-4981-b30b-d549e9bed795
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.smartwatch
+    - field.storage.commerce_product.field_sports
+    - taxonomy.vocabulary.sporten
+id: commerce_product.smartwatch.field_sports
+field_name: field_sports
+entity_type: commerce_product
+bundle: smartwatch
+label: Sports
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sporten: sporten
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

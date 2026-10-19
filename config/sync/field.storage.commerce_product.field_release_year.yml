@@ -1,0 +1,20 @@
+uuid: 159d3676-c131-4a1e-b87d-4f7c3f8e4277
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product.field_release_year
+field_name: field_release_year
+entity_type: commerce_product
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

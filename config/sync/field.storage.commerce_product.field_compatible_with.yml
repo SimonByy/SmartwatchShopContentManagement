@@ -1,0 +1,19 @@
+uuid: 6038cdab-2d3b-4e76-96d7-48e23347351f
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product.field_compatible_with
+field_name: field_compatible_with
+entity_type: commerce_product
+type: entity_reference
+settings:
+  target_type: commerce_product
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

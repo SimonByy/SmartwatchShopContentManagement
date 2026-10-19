@@ -1,0 +1,10 @@
+uuid: 442e0026-253a-4f3f-bdc5-ee888c33e74d
+langcode: en
+status: true
+dependencies: {  }
+id: smartwatch_variation
+label: 'Smartwatch variation'
+traits: {  }
+locked: false
+orderItemType: default
+generateTitle: true

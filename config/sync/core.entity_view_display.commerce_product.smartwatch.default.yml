@@ -1,0 +1,158 @@
+uuid: bce281cc-b868-416e-af3b-053bf0c4db1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.smartwatch
+    - field.field.commerce_product.smartwatch.body
+    - field.field.commerce_product.smartwatch.field_battery_life_gps
+    - field.field.commerce_product.smartwatch.field_battery_life_smartwatch
+    - field.field.commerce_product.smartwatch.field_brand
+    - field.field.commerce_product.smartwatch.field_category
+    - field.field.commerce_product.smartwatch.field_compatibility
+    - field.field.commerce_product.smartwatch.field_display_type
+    - field.field.commerce_product.smartwatch.field_features
+    - field.field.commerce_product.smartwatch.field_images
+    - field.field.commerce_product.smartwatch.field_release_year
+    - field.field.commerce_product.smartwatch.field_sports
+    - field.field.commerce_product.smartwatch.field_water_resistance
+    - field.field.commerce_product.smartwatch.field_weight
+  module:
+    - commerce_product
+    - image
+    - options
+    - text
+id: commerce_product.smartwatch.default
+targetEntityType: commerce_product
+bundle: smartwatch
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_battery_life_gps:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 21
+    region: content
+  field_battery_life_smartwatch:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 20
+    region: content
+  field_brand:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_category:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_compatibility:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 17
+    region: content
+  field_display_type:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 18
+    region: content
+  field_features:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 15
+    region: content
+  field_images:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_release_year:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 23
+    region: content
+  field_sports:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 16
+    region: content
+  field_water_resistance:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 19
+    region: content
+  field_weight:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 22
+    region: content
+  title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: -5
+    region: content
+  variations:
+    type: commerce_add_to_cart
+    label: above
+    settings:
+      combine: true
+    third_party_settings: {  }
+    weight: 10
+    region: content
+hidden:
+  created: true
+  stores: true
+  uid: true

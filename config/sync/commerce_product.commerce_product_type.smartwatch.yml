@@ -1,0 +1,13 @@
+uuid: 2340af8d-6eed-43c7-9567-076ad9103e46
+langcode: en
+status: true
+dependencies: {  }
+id: smartwatch
+label: Smartwatch
+traits: {  }
+locked: false
+description: ''
+variationTypes:
+  - smartwatch_variation
+multipleVariations: true
+injectVariationFields: true
