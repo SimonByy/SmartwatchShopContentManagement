@@ -1,0 +1,26 @@
+uuid: 2cc38ecd-1597-451b-a760-5580a2a98394
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce
+    - commerce_order
+    - system
+    - toolbar
+id: customer_service
+label: 'Customer service'
+weight: -6
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access commerce administration pages'
+  - 'access commerce_order overview'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'administer users'
+  - 'manage default commerce_order_item'
+  - 'update default commerce_order'
+  - 'view commerce_order'
+  - 'view default commerce_order'
+  - 'view own commerce_order'
+  - 'view the administration theme'

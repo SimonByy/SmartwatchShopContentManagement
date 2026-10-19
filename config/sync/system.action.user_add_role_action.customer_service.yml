@@ -1,0 +1,14 @@
+uuid: 0f25b330-3d6c-483c-8d0f-b89debb6ae1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.customer_service
+  module:
+    - user
+id: user_add_role_action.customer_service
+label: 'Add the Customer service role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: customer_service

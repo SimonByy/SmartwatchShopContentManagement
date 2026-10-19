@@ -1,0 +1,67 @@
+uuid: 58f9550e-a52f-42d2-9999-c47bac6a0a23
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categorie
+    - taxonomy.vocabulary.compatibiliteit
+    - taxonomy.vocabulary.features
+    - taxonomy.vocabulary.merk
+    - taxonomy.vocabulary.sporten
+    - taxonomy.vocabulary.tags
+  module:
+    - commerce
+    - commerce_product
+    - system
+    - taxonomy
+    - toolbar
+id: product_manager
+label: 'Product manager'
+weight: -7
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access commerce administration pages'
+  - 'access commerce_product overview'
+  - 'access commerce_product_attribute overview'
+  - 'access toolbar'
+  - 'create accessory commerce_product'
+  - 'create commerce_product_attribute'
+  - 'create default commerce_product'
+  - 'create smartwatch commerce_product'
+  - 'create terms in categorie'
+  - 'create terms in compatibiliteit'
+  - 'create terms in features'
+  - 'create terms in merk'
+  - 'create terms in sporten'
+  - 'create terms in tags'
+  - 'delete any accessory commerce_product'
+  - 'delete any default commerce_product'
+  - 'delete any smartwatch commerce_product'
+  - 'delete commerce_product_attribute'
+  - 'delete own accessory commerce_product'
+  - 'delete own default commerce_product'
+  - 'delete own smartwatch commerce_product'
+  - 'edit terms in categorie'
+  - 'edit terms in compatibiliteit'
+  - 'edit terms in features'
+  - 'edit terms in merk'
+  - 'edit terms in sporten'
+  - 'edit terms in tags'
+  - 'manage accessory_variation commerce_product_variation'
+  - 'manage default commerce_product_variation'
+  - 'manage smartwatch_variation commerce_product_variation'
+  - 'update any accessory commerce_product'
+  - 'update any default commerce_product'
+  - 'update any smartwatch commerce_product'
+  - 'update commerce_product_attribute'
+  - 'update own accessory commerce_product'
+  - 'update own default commerce_product'
+  - 'update own smartwatch commerce_product'
+  - 'view accessory commerce_product'
+  - 'view commerce_product'
+  - 'view commerce_product_attribute'
+  - 'view default commerce_product'
+  - 'view own unpublished commerce_product'
+  - 'view smartwatch commerce_product'
+  - 'view the administration theme'

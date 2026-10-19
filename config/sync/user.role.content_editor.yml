@@ -3,6 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - node.type.faq
+    - node.type.gids
+    - node.type.page
     - taxonomy.vocabulary.tags
   module:
     - contextual
@@ -12,11 +15,12 @@ dependencies:
     - path
     - system
     - taxonomy
+    - toolbar
 _core:
   default_config_hash: og55Zu0F-q-X8zG0Ohrls49zws6IrmmosZS-30Es8vw
 id: content_editor
 label: 'Content editor'
-weight: 2
+weight: -8
 is_admin: false
 permissions:
   - 'access administration pages'
@@ -24,10 +28,20 @@ permissions:
   - 'access contextual links'
   - 'access files overview'
   - 'access navigation'
+  - 'access toolbar'
   - 'administer url aliases'
+  - 'create faq content'
+  - 'create gids content'
+  - 'create page content'
   - 'create terms in tags'
   - 'create url aliases'
+  - 'delete own faq content'
   - 'delete own files'
+  - 'delete own gids content'
+  - 'delete own page content'
+  - 'edit any faq content'
+  - 'edit any gids content'
+  - 'edit any page content'
   - 'edit terms in tags'
   - 'revert all revisions'
   - 'view all revisions'

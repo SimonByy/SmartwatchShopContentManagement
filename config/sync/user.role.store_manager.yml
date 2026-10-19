@@ -1,0 +1,90 @@
+uuid: ba07cacb-83e2-4a1e-8e99-32a0cef2c6a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.faq
+    - node.type.gids
+    - node.type.page
+    - taxonomy.vocabulary.categorie
+    - taxonomy.vocabulary.compatibiliteit
+    - taxonomy.vocabulary.features
+    - taxonomy.vocabulary.merk
+    - taxonomy.vocabulary.sporten
+    - taxonomy.vocabulary.tags
+  module:
+    - commerce
+    - commerce_order
+    - commerce_product
+    - node
+    - system
+    - taxonomy
+    - toolbar
+id: store_manager
+label: 'Store manager'
+weight: -5
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access commerce administration pages'
+  - 'access commerce_order overview'
+  - 'access commerce_product overview'
+  - 'access commerce_product_attribute overview'
+  - 'access content overview'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'administer users'
+  - 'create accessory commerce_product'
+  - 'create commerce_product_attribute'
+  - 'create default commerce_product'
+  - 'create faq content'
+  - 'create gids content'
+  - 'create page content'
+  - 'create smartwatch commerce_product'
+  - 'create terms in categorie'
+  - 'create terms in compatibiliteit'
+  - 'create terms in features'
+  - 'create terms in merk'
+  - 'create terms in sporten'
+  - 'create terms in tags'
+  - 'delete any accessory commerce_product'
+  - 'delete any default commerce_product'
+  - 'delete any faq content'
+  - 'delete any gids content'
+  - 'delete any page content'
+  - 'delete any smartwatch commerce_product'
+  - 'delete commerce_product_attribute'
+  - 'delete own accessory commerce_product'
+  - 'delete own default commerce_product'
+  - 'delete own smartwatch commerce_product'
+  - 'edit any faq content'
+  - 'edit any gids content'
+  - 'edit any page content'
+  - 'edit terms in categorie'
+  - 'edit terms in compatibiliteit'
+  - 'edit terms in features'
+  - 'edit terms in merk'
+  - 'edit terms in sporten'
+  - 'edit terms in tags'
+  - 'manage accessory_variation commerce_product_variation'
+  - 'manage default commerce_order_item'
+  - 'manage default commerce_product_variation'
+  - 'manage smartwatch_variation commerce_product_variation'
+  - 'update any accessory commerce_product'
+  - 'update any default commerce_product'
+  - 'update any smartwatch commerce_product'
+  - 'update commerce_product_attribute'
+  - 'update default commerce_order'
+  - 'update own accessory commerce_product'
+  - 'update own default commerce_product'
+  - 'update own smartwatch commerce_product'
+  - 'view accessory commerce_product'
+  - 'view commerce_order'
+  - 'view commerce_product'
+  - 'view commerce_product_attribute'
+  - 'view default commerce_order'
+  - 'view default commerce_product'
+  - 'view own commerce_order'
+  - 'view own unpublished commerce_product'
+  - 'view smartwatch commerce_product'
+  - 'view the administration theme'

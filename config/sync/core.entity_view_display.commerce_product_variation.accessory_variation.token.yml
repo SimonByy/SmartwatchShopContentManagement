@@ -1,0 +1,42 @@
+uuid: a3bb1a01-8068-4716-9119-8302d45b58d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.accessory_variation
+    - core.entity_view_mode.commerce_product_variation.token
+    - field.field.commerce_product_variation.accessory_variation.attribute_band_length
+    - field.field.commerce_product_variation.accessory_variation.attribute_band_width
+    - field.field.commerce_product_variation.accessory_variation.attribute_color
+  module:
+    - commerce_price
+id: commerce_product_variation.accessory_variation.token
+targetEntityType: commerce_product_variation
+bundle: accessory_variation
+mode: token
+content:
+  list_price:
+    type: commerce_price_default
+    label: above
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  price:
+    type: commerce_price_default
+    label: above
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  attribute_band_length: true
+  attribute_band_width: true
+  attribute_color: true
+  product_id: true
+  sku: true
+  title: true

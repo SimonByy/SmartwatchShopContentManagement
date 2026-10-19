@@ -20,34 +20,21 @@ targetEntityType: commerce_product_variation
 bundle: smartwatch_variation
 mode: cart
 content:
-  attribute_case_size:
-    type: entity_reference_label
+  title:
+    type: string
     label: above
     settings:
-      link: true
-    third_party_settings: {  }
-    weight: 1
-    region: content
-  attribute_color:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 2
-    region: content
-  product_id:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
+      link_to_entity: false
+      link_rel: canonical
     third_party_settings: {  }
     weight: 0
     region: content
 hidden:
+  attribute_case_size: true
+  attribute_color: true
   attribute_connectivity: true
   attribute_material: true
   list_price: true
   price: true
+  product_id: true
   sku: true
-  title: true

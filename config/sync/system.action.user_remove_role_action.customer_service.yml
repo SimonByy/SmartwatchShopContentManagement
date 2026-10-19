@@ -1,0 +1,14 @@
+uuid: f57e8f28-9141-44a9-b672-4a495ea87c8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.customer_service
+  module:
+    - user
+id: user_remove_role_action.customer_service
+label: 'Remove the Customer service role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: customer_service
