@@ -1,0 +1,7 @@
+uuid: 9c931e58-a313-4195-a550-02251ed07d57
+langcode: en
+status: true
+dependencies: {  }
+id: case_size
+label: 'Case size'
+elementType: radios

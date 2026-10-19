@@ -1,0 +1,7 @@
+uuid: 070619f1-bcf3-47dc-9dde-6e02372e98f8
+langcode: en
+status: true
+dependencies: {  }
+id: band_width
+label: 'Band width'
+elementType: select

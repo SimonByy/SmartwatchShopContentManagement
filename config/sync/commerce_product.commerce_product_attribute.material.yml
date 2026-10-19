@@ -1,0 +1,7 @@
+uuid: 3dada357-18fb-4062-a5e8-c305f214db26
+langcode: en
+status: true
+dependencies: {  }
+id: material
+label: Material
+elementType: select

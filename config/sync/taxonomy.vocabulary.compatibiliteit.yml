@@ -2,7 +2,7 @@ uuid: 17afef70-83e0-46ff-9c3c-4c3180eef8f8
 langcode: en
 status: true
 dependencies: {  }
-name: Compatibiliteit
+name: Compatibility
 vid: compatibiliteit
 description: null
 weight: 0

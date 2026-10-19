@@ -1,0 +1,7 @@
+uuid: 9c8bc88b-50ff-4e60-ab0e-e3cfd21a6d3d
+langcode: en
+status: true
+dependencies: {  }
+id: connectivity
+label: Connectivity
+elementType: radios

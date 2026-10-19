@@ -2,7 +2,7 @@ uuid: 9952127e-334c-4d28-8220-a6f3b52b4046
 langcode: en
 status: true
 dependencies: {  }
-name: Sporten
+name: Sports
 vid: sporten
 description: null
 weight: 0

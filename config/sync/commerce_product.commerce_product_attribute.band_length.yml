@@ -1,0 +1,7 @@
+uuid: 5fcd9737-26b5-4a81-b02d-e864b7f6c2cb
+langcode: en
+status: true
+dependencies: {  }
+id: band_length
+label: 'Band length'
+elementType: radios
