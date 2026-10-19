@@ -1,0 +1,21 @@
+uuid: 33a92b66-191f-4898-9ae3-795f0aa8a303
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_faq_categorie
+    - node.type.faq
+  module:
+    - options
+id: node.faq.field_faq_categorie
+field_name: field_faq_categorie
+entity_type: node
+bundle: faq
+label: FAQ-categorie
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

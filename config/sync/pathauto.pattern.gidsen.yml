@@ -1,0 +1,23 @@
+uuid: bc8e6bb8-f79e-4089-9b8a-5f945fafe8ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.gids
+  module:
+    - node
+id: gidsen
+label: Gidsen
+type: 'canonical_entities:node'
+pattern: '/gids/[node:title]'
+selection_criteria:
+  aad61c5a-4d7e-453d-9253-bb696b6ed040:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      gids: gids
+selection_logic: and
+weight: -5
+relationships: {  }

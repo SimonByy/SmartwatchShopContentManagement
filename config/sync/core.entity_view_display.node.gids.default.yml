@@ -1,0 +1,68 @@
+uuid: b975f118-bf42-4af9-9be4-2e330302e2bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.gids.field_afbeelding
+    - field.field.node.gids.field_body
+    - field.field.node.gids.field_gerelateerde_producten
+    - field.field.node.gids.field_merk
+    - field.field.node.gids.field_sporten
+    - node.type.gids
+  module:
+    - image
+    - text
+    - user
+id: node.gids.default
+targetEntityType: node
+bundle: gids
+mode: default
+content:
+  field_afbeelding:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_gerelateerde_producten:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_merk:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_sporten:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,23 @@
+uuid: 55af1f12-45a0-4453-9d49-a82649c859b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.page
+  module:
+    - node
+id: pagina_s
+label: "Pagina's"
+type: 'canonical_entities:node'
+pattern: '/[node:title]'
+selection_criteria:
+  97c8553c-0518-4a22-80c5-a38170e1017d:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      page: page
+selection_logic: and
+weight: -5
+relationships: {  }

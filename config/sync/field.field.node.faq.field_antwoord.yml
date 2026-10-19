@@ -1,0 +1,22 @@
+uuid: 89082b8a-49cd-40ff-8603-22629b049193
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_antwoord
+    - node.type.faq
+  module:
+    - text
+id: node.faq.field_antwoord
+field_name: field_antwoord
+entity_type: node
+bundle: faq
+label: Antwoord
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

@@ -1,0 +1,20 @@
+uuid: bb7c7fb1-54fe-4a8f-8287-91bbf00ce78e
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - node
+id: node.field_gerelateerde_producten
+field_name: field_gerelateerde_producten
+entity_type: node
+type: entity_reference
+settings:
+  target_type: commerce_product
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

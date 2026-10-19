@@ -1,0 +1,23 @@
+uuid: 7ab03262-161e-4fe3-94c7-ed3565cd0e42
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.merk
+  module:
+    - taxonomy
+id: merken
+label: Merken
+type: 'canonical_entities:taxonomy_term'
+pattern: '/merk/[term:parents:join-path]/[term:name]'
+selection_criteria:
+  b846a56c-5b9b-4f82-87fd-72b347ac95b2:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      merk: merk
+selection_logic: and
+weight: -5
+relationships: {  }

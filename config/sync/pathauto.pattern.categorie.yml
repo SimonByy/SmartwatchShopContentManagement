@@ -1,0 +1,23 @@
+uuid: 2b5187bd-3a55-40f0-bbf3-6ce2cf397b8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categorie
+  module:
+    - taxonomy
+id: categorie
+label: Categorie
+type: 'canonical_entities:taxonomy_term'
+pattern: '/categorie/[term:parents:join-path]/[term:name]'
+selection_criteria:
+  5cea4bd8-c129-4487-bd1d-b5910a446dfa:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      categorie: categorie
+selection_logic: and
+weight: -5
+relationships: {  }

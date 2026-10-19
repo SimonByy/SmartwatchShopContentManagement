@@ -1,0 +1,37 @@
+uuid: 5c32d29f-a78f-4d78-aa66-fce627b9d9bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.faq.field_antwoord
+    - field.field.node.faq.field_faq_categorie
+    - node.type.faq
+  module:
+    - options
+    - text
+    - user
+id: node.faq.default
+targetEntityType: node
+bundle: faq
+mode: default
+content:
+  field_antwoord:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_faq_categorie:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
