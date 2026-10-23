@@ -1,0 +1,44 @@
+/* Links */
+a {
+    color: var(--sw-navy);
+}
+
+a:hover {
+    color: #3f5c00;
+}
+
+/* primaire knoppen */
+.btn-primary,
+.button--primary,
+.button--add-to-cart,
+input.form-submit {
+    background-color: var(--sw-lime);
+    border: none;
+    color: var(--sw-navy);
+    font-weight: 700;
+    border-radius: 999px;
+    padding: 0.6rem 1.5rem;
+}
+
+.btn-primary:hover,
+.button--primary:hover,
+.button--add-to-cart:hover,
+input.form-submit:hover {
+    background-color: #b2dc22;
+    color: var(--sw-navy);
+}
+
+/* headers */
+h1,
+h2,
+h3 {
+    color: var(--sw-navy);
+    font-weight: 800;
+}
+
+/* prijzen */
+.field--name-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--sw-navy);
+}

@@ -1,0 +1,60 @@
+/* Header */
+#header,
+#navbar-main {
+    background-color: var(--sw-navy);
+}
+
+#navbar-main .nav-link,
+#navbar-main .navbar-brand,
+#navbar-main .site-title a {
+    color: #fff;
+}
+
+#navbar-main .nav-link:hover,
+#navbar-main .nav-link.is-active {
+    color: var(--sw-lime);
+}
+
+/* body */
+#main-wrapper {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+/* Footerr */
+.site-footer {
+    background-color: var(--sw-navy);
+    color: #cbd5e1;
+    padding: 2.5rem 0;
+}
+
+.site-footer a {
+    color: #fff;
+}
+
+.site-footer a:hover {
+    color: var(--sw-lime);
+}
+/* mijn account bar*/
+#navbar-top a,
+.region-secondary-menu a {
+  color: #cbd5e1;
+  font-size: 0.9rem;
+}
+
+#navbar-top a:hover,
+.region-secondary-menu a:hover {
+  color: var(--sw-lime);
+}
+
+/* naam v.d site */
+#navbar-main .navbar-brand {
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+/* footerrrr */
+.site-footer,
+.site-footer.bg-dark {
+  background-color: var(--sw-navy) !important;
+}

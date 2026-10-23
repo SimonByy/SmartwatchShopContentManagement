@@ -1,0 +1,12 @@
+:root {
+    --sw-navy: #0f172a;
+    --sw-lime: #c6f432;
+    --sw-text: #1e293b;
+    --sw-bg: #f8fafc;
+    --sw-success: #16a34a;
+}
+
+body {
+    background-color: var(--sw-bg);
+    color: var(--sw-text);
+}
