@@ -1,0 +1,36 @@
+uuid: 975b98e9-d976-468c-8dc8-5fe6287d997d
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.smartwatch_variation
+    - core.entity_view_mode.commerce_product_variation.price_only
+    - field.field.commerce_product_variation.smartwatch_variation.attribute_case_size
+    - field.field.commerce_product_variation.smartwatch_variation.attribute_color
+    - field.field.commerce_product_variation.smartwatch_variation.attribute_connectivity
+    - field.field.commerce_product_variation.smartwatch_variation.attribute_material
+  module:
+    - commerce_price
+id: commerce_product_variation.smartwatch_variation.price_only
+targetEntityType: commerce_product_variation
+bundle: smartwatch_variation
+mode: price_only
+content:
+  price:
+    type: commerce_price_default
+    label: hidden
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  attribute_case_size: true
+  attribute_color: true
+  attribute_connectivity: true
+  attribute_material: true
+  list_price: true
+  product_id: true
+  sku: true
+  title: true

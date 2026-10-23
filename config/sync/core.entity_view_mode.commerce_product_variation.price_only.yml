@@ -1,0 +1,11 @@
+uuid: c7cc10c0-8180-4b24-b9bc-3fc9433577c5
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product_variation.price_only
+label: 'Price only'
+description: null
+targetEntityType: commerce_product_variation
+cache: true

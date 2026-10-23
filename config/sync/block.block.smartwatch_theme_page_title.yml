@@ -1,0 +1,20 @@
+uuid: cafb79ec-e313-484b-9859-229471d3aa8f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - smartwatch_theme
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: smartwatch_theme_page_title
+theme: smartwatch_theme
+region: top_header
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

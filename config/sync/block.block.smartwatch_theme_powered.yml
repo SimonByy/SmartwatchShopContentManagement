@@ -1,0 +1,22 @@
+uuid: 6102e84d-c24d-4b84-8484-84a8f142e862
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - smartwatch_theme
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: smartwatch_theme_powered
+theme: smartwatch_theme
+region: top_header
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

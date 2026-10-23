@@ -42,3 +42,62 @@ h3 {
     font-weight: 700;
     color: var(--sw-navy);
 }
+
+
+
+
+/* SHOP VIEW */
+.view-shop .views-view-responsive-grid__item {
+    background: #fff;
+    border-radius: 16px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 10px rgba(15, 23, 42, 0.06);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.view-shop .views-view-responsive-grid__item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+}
+
+.view-shop img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+/* merk / series */
+.view-shop [class*="brand"],
+.view-shop [class*="brand"] a {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    color: #64748b;
+    text-decoration: none;
+}
+
+/* titel */
+.view-shop .views-field-title a {
+    color: var(--sw-navy);
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+/* prijs*/
+.view-shop .views-field-variations {
+    margin-top: auto;
+    padding-top: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--sw-navy);
+}
+
+/* Pager */
+.pager .page-link,
+.pager__item a {
+    color: var(--sw-navy);
+}

@@ -64,4 +64,6 @@ module:
 theme:
   olivero: 0
   claro: 0
+  bootstrap_barrio: 0
+  smartwatch_theme: 0
 profile: standard
