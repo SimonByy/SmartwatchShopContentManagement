@@ -1,0 +1,66 @@
+{#
+/**
+ * @file
+ * Product page for the Accessory product type.
+ *
+ * Override of commerce-product.html.twig: photo left, buy box right,
+ * description and details table below. Same classes as the smartwatch
+ * template so the existing CSS is reused.
+ * Labels are hidden via Manage display.
+ */
+#}
+<article{{ attributes }} class="sw-product sw-product--accessory">
+  {{ title_prefix }}
+  {{ title_suffix }}
+
+  <div class="row g-4 g-lg-5">
+    <div class="col-lg-6 sw-product__media">
+      {{ product.field_images }}
+    </div>
+
+    <div class="col-lg-6 sw-product__buy">
+      {% if product.field_brand %}
+        <div class="sw-product__brand">
+          {{ product.field_brand }}
+        </div>
+      {% endif %}
+
+      <h1 class="sw-product__title">{{ product.title }}</h1>
+
+      {% if product.variation_price %}
+        <div class="sw-product__price">
+          {{ product.variation_price }}
+        </div>
+      {% endif %}
+
+      {{ product.variations }}
+    </div>
+  </div>
+
+  {% if product.body %}
+    <section class="sw-product__description">
+      <h2>About this accessory</h2>
+      {{ product.body }}
+    </section>
+  {% endif %}
+
+  <section class="sw-specs">
+    <h2>Details</h2>
+    <table class="table">
+      <tbody>
+        {% if product.field_category %}
+          <tr>
+            <th scope="row">Category</th>
+            <td>{{ product.field_category }}</td>
+          </tr>
+        {% endif %}
+        {% if product.field_compatible_with %}
+          <tr>
+            <th scope="row">Fits these watches</th>
+            <td>{{ product.field_compatible_with }}</td>
+          </tr>
+        {% endif %}
+      </tbody>
+    </table>
+  </section>
+</article>

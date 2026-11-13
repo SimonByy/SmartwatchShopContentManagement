@@ -27,23 +27,23 @@ content:
     region: content
   field_brand:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     weight: 13
     region: content
   field_category:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     weight: 14
     region: content
   field_compatible_with:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -51,7 +51,7 @@ content:
     region: content
   field_images:
     type: image
-    label: above
+    label: hidden
     settings:
       image_link: ''
       image_style: ''
@@ -71,7 +71,7 @@ content:
     region: content
   variations:
     type: commerce_add_to_cart
-    label: above
+    label: hidden
     settings:
       combine: true
     third_party_settings: {  }

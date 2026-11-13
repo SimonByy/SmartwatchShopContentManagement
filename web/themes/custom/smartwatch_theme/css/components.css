@@ -313,3 +313,14 @@ h3 {
     font-weight: 800;
     color: var(--sw-navy);
 }
+
+/*Accessory page */
+.sw-product--accessory .sw-specs .field__item a {
+    color: var(--sw-navy);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.sw-product--accessory .sw-specs .field__items .field__item:hover {
+    background: var(--sw-lime);
+}
