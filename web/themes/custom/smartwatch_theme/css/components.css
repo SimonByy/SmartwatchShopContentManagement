@@ -136,3 +136,126 @@ h3 {
     height: 180px;
     object-fit: contain;
 }
+
+/*Product pagina (commerce-product--smartwatch.html.twig)*/
+
+/* foto*/
+.sw-product__media {
+    background: #fff;
+    border-radius: 24px;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(15, 23, 42, 0.06);
+}
+
+.sw-product__media img {
+    width: 100%;
+    height: auto;
+    max-height: 460px;
+    object-fit: contain;
+}
+
+/*toon enkel eerste foto als er meerdere zijn  */
+.sw-product__media .field__item + .field__item {
+    display: none;
+}
+
+/* aankoopknop blijft zichtbaar */
+@media (min-width: 992px) {
+    .sw-product__buy {
+        position: sticky;
+        top: 1.5rem;
+    }
+}
+
+/* Brand / series */
+.sw-product__brand,
+.sw-product__brand a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+    color: #64748b;
+    text-decoration: none;
+}
+
+/* titel */
+.sw-product__title {
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 800;
+    color: var(--sw-navy);
+    margin: 0.25rem 0 0.75rem;
+}
+
+/* prijs */
+.sw-product__price {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--sw-navy);
+    margin-bottom: 1.5rem;
+}
+
+/* attributen v.d horloge */
+.sw-product__buy fieldset {
+    border: 0;
+    padding: 0;
+    margin-bottom: 1.25rem;
+}
+
+.sw-product__buy legend,
+.sw-product__buy .form-label,
+.sw-product__buy label.form-required {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--sw-navy);
+}
+
+/* heading onder foto */
+.sw-product__description,
+.sw-specs {
+    margin-top: 3rem;
+    max-width: 900px;
+}
+
+.sw-product__description h2,
+.sw-specs h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* specificaties */
+.sw-specs .table {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(15, 23, 42, 0.06);
+}
+
+.sw-specs th {
+    width: 35%;
+    color: #64748b;
+    font-weight: 600;
+    padding: 0.9rem 1.25rem;
+}
+
+.sw-specs td {
+    color: var(--sw-navy);
+    padding: 0.9rem 1.25rem;
+}
+
+/* meerde values voor iets naast elkaar neit onder */
+.sw-specs .field__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+}
+
+.sw-specs .field__items .field__item {
+    background: var(--sw-bg);
+    border-radius: 999px;
+    padding: 0.15rem 0.75rem;
+    font-size: 0.9rem;
+}
+
+.sw-specs a {
+    color: var(--sw-navy);
+    text-decoration: none;
+}
