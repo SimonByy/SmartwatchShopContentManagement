@@ -1,0 +1,105 @@
+{#
+/**
+ * @file
+ * Product page for the Smartwatch product type.
+ *
+ * Override of commerce-product.html.twig: photo left, buy box right,
+ * description and specifications table below.
+ * Labels are hidden via Manage display.
+ */
+#}
+<article{{ attributes }} class="sw-product">
+  {{ title_prefix }}
+  {{ title_suffix }}
+
+  <div class="row g-4 g-lg-5">
+    <div class="col-lg-6 sw-product__media">
+      {{ product.field_images }}
+    </div>
+
+    <div class="col-lg-6 sw-product__buy">
+      {% if product.field_brand %}
+        <div class="sw-product__brand">
+          {{ product.field_brand }}
+        </div>
+      {% endif %}
+    <h1 class="sw-product__title">{{ product.title }}</h1>
+      {% if product.variation_price %}
+        <div class="sw-product__price">
+          {{ product.variation_price }}
+        </div>
+      {% endif %}
+
+      {{ product.variations }}
+    </div>
+  </div>
+
+  {% if product.body %}
+    <section class="sw-product__description">
+      <h2>About this watch</h2>
+      {{ product.body }}
+    </section>
+  {% endif %}
+
+  <section class="sw-specs">
+    <h2>Specifications</h2>
+    <table class="table">
+      <tbody>
+        {% if product.field_display_type %}
+          <tr>
+            <th scope="row">Display</th>
+            <td>{{ product.field_display_type }}</td>
+          </tr>
+        {% endif %}
+        {% if product.field_water_resistance %}
+          <tr>
+            <th scope="row">Water resistance</th>
+            <td>{{ product.field_water_resistance }}</td>
+          </tr>
+        {% endif %}
+        {% if product.field_battery_life_smartwatch %}
+          <tr>
+            <th scope="row">Battery (smartwatch mode)</th>
+            <td>{{ product.field_battery_life_smartwatch }}</td>
+          </tr>
+        {% endif %}
+        {% if product.field_battery_life_gps %}
+                    <tr>
+            <th scope="row">Battery (GPS mode)</th>
+            <td>{{ product.field_battery_life_gps }}</td>
+          </tr>
+        {% endif %}
+        {% if product.field_weight %}
+          <tr>
+            <th scope="row">Weight</th>
+            <td>{{ product.field_weight }}</td>
+          </tr>
+        {% endif %}
+        {% if product.field_release_year %}
+          <tr>
+            <th scope="row">Release year</th>
+            <td>{{ product.field_release_year }}</td>
+          </tr>
+        {% endif %}
+        {% if product.field_features %}
+          <tr>
+            <th scope="row">Features</th>
+            <td>{{ product.field_features }}</td>
+          </tr>
+        {% endif %}
+        {% if product.field_sports %}
+          <tr>
+            <th scope="row">Sports</th>
+            <td>{{ product.field_sports }}</td>
+          </tr>
+        {% endif %}
+        {% if product.field_compatibility %}
+          <tr>
+            <th scope="row">Works with</th>
+            <td>{{ product.field_compatibility }}</td>
+          </tr>
+        {% endif %}
+      </tbody>
+    </table>
+  </section>
+</article>
