@@ -1,0 +1,30 @@
+uuid: de860530-4725-4116-9e93-0ab8596b301f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.fits_your_watch
+  module:
+    - system
+    - views
+  theme:
+    - smartwatch_theme
+id: smartwatch_theme_views_block__fits_your_watch_block_1
+theme: smartwatch_theme
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:fits_your_watch-block_1'
+settings:
+  id: 'views_block:fits_your_watch-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: null
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/product/*'
